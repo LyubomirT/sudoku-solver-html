@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sudoku Solver</title>
+  <link rel="stylesheet" href="styles/common.css">
+  <link rel="stylesheet" href="styles/dark.css">
+</head>
+
+<body>
+  <div class="container">
+    <div class="sidebar">
+      <h2>Sudoku Solver</h2>
+      <label for="board-size">Board Size:</label>
+      <select id="board-size">
+        <option value="4">4x4</option>
+        <option value="9" selected>9x9</option>
+        <option value="16">16x16</option>
+      </select>
+      <button class="button" onclick="clearBoard()">Clear</button>
+      <button class="button" onclick="solveSudoku()">Solve</button>
+      <div class="message" id="message"></div>
+
+      <!-- Switch -->
+      <div class="switch-container">
+        <span class="switch-label">Dark Mode:</span>
+        <label class="switch">
+          <input type="checkbox" id="dark-mode-toggle" onchange="toggleDarkMode()">
+          <span class="slider"></span>
+        </label>
+      </div>
+    </div>
+    <div class="board" id="board"></div>
+  </div>
+
+  <script src="scripts/main.js"></script>
+</body>
+
+</html>

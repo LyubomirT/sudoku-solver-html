@@ -1,0 +1,133 @@
+body {
+  background-color: #f3f3f3;
+  font-family: Arial, sans-serif;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  transition: background-color 0.3s ease;
+}
+
+body.dark-mode {
+  background-color: #222;
+}
+
+.container {
+  display: flex;
+  background-color: white;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+  border-radius: 5px;
+  overflow: hidden;
+}
+
+.sidebar {
+  width: 200px;
+  background-color: #f3f3f3;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.board {
+  flex: 1;
+  display: grid;
+  grid-template-columns: repeat(var(--size), 1fr);
+  grid-template-rows: repeat(var(--size), 1fr);
+  gap: 1px;
+  background-color: #ccc;
+  aspect-ratio: 1;
+  max-width: 700px;
+  max-height: 700px;
+  margin: auto;
+}
+
+.cell {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: bold;
+  font-size: 20px;
+  cursor: pointer;
+  background-color: #fff;
+}
+
+.cell input {
+  width: calc(100% - 6px);
+  height: calc(100% - 6px);
+  text-align: center;
+  font-weight: bold;
+  font-size: 20px;
+  border: none;
+  background: transparent;
+}
+
+.button {
+  margin-top: 10px;
+  padding: 10px 20px;
+  width: 100px;
+  background-color: purple;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.message {
+  margin-top: 20px;
+  color: purple;
+  font-weight: bold;
+}
+
+select#board-size {
+  margin-top: 10px;
+  padding: 10px;
+  font-size: 16px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  background-color: #fff;
+  color: #333;
+  width: 100px;
+}
+
+select#board-size option {
+  background-color: #fff;
+  color: #333;
+}
+
+/* Switch */
+.switch-container {
+  display: flex;
+  align-items: center;
+  margin-top: 20px;
+}
+
+.switch-label {
+  margin-right: 10px;
+  font-weight: bold;
+}
+
+.switch {
+  position: relative;
+  display: inline-block;
+  width: 40px;
+  height: 24px;
+}
+
+.switch input {
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+
+.slider {
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #ccc;
+  transition: 0.4s;
+  border-radius: 24px;
+}
