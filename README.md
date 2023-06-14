@@ -29,6 +29,6 @@ This Sudoku Solver is a web application written in HTML that allows you to solve
 
 This project is licensed under the [MIT License](LICENSE).
 
-Feel free to contribute and improve the Sudoku Solver. If you encounter any issues or have suggestions, please create an issue in the [issue tracker](https://github.com/your-username/sudoku-solver/issues).
+Feel free to contribute and improve the Sudoku Solver. If you encounter any issues or have suggestions, please create an issue in the [issue tracker](https://github.com/LyubomirT/sudoku-solver-html/issues).
 
 Happy Sudoku solving!
