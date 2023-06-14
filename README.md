@@ -22,7 +22,8 @@ This Sudoku Solver is a web application written in HTML that allows you to solve
 
 ## Preview
 
-![Sudoku Solver Preview](screenshot.png)
+![Sudoku Solver Preview](previews/screenshot.png)
+![Sudoku Solver Preview](previews/screenshot_2.png)
 
 ## License
 
